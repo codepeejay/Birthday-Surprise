@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify QR Code</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://cdn.visitgifu.com/wp/2020/03/dbbf82e0-img_3504.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        #listenToMe {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow for better readability */
+        }
+        #qrCode {
+            width: 50%;
+            max-width: 400px; /* Set a maximum width for large screens */
+            height: auto;    /* Maintain the aspect ratio */
+            margin-bottom: 20px; /* Add some space below the QR code */
+        }
+        button {
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: pink;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div id="listenToMe">Listen to Me</div>
+    <img id="qrCode" src="https://scannables.scdn.co/uri/plain/jpeg/010101/white/640/spotify:track:03G92s34DOQCqcVZl0Gaoh" alt="Spotify QR Code">
+    <button onclick="window.location.href='PBD.html'">Back to Start</button>
+</body>
+</html>
